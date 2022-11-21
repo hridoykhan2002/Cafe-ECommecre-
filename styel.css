@@ -1,0 +1,723 @@
+/* start index */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* global */
+.section-p{
+    padding: 30px 80px;
+}
+.btn{
+    outline: none;
+    padding: 4px 35px;
+    font-size: 17px;
+    transition: .3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+/* header */
+header{
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 3px 3px 3px grey;
+}
+header .logo h1{
+    color: rgb(78, 76, 76);
+    font-weight: 650;
+    margin-left: 30px;
+}
+.toggle-btn{
+    outline: none;
+    transition: .3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    display: none;
+}
+.toggle-btn:hover{
+    background-color: rgb(219, 199, 199);
+}
+.link{
+    display: flex;
+    margin-right: 20px;
+    transition:  .3s ease-in-out !important;
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 0 5px 0 5px;
+    transition: .3s ease-in;
+}
+.link a:hover{
+    color: rgb(3, 160, 160);
+    border-bottom: 1px solid darkcyan;
+}
+.nabvar-active{
+    color: rgb(3, 160, 160) !important;
+    border-bottom: 1px solid darkcyan !important;
+}
+/* hero */
+#hero{
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0,0,0, .07)), url(img/hero.jpeg) center no-repeat;
+    background-size: cover;
+    padding: 130px 0 0 80px;
+    color: white;
+}
+#hero h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
+#hero h3{
+    font-size: 22px;
+    margin: 10px 0;
+}
+#hero h2{
+    font-size: 35px;
+    margin: 10px 0;
+    color: darkcyan;
+}
+#hero p{
+    margin: 10px 0;
+}
+#hero button {
+	background-image: url("img/button.png");
+	background-position: center;
+	background-size: cover;
+	background-color: transparent;
+	padding: 10px 60px;
+	padding-top: 3px;
+	border: none;
+	cursor: pointer;
+    font-size: 20px;
+}
+
+/* extra box */
+#extra-box{
+    display: flex;
+    justify-content: space-between;
+}
+.single-box{
+    width: 150px;
+    box-shadow: 3px 3px 3px grey,-3px -3px 3px grey;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+.single-box img{
+    width: 100%;
+}
+.single-box h4{
+    background-color: grey;
+    color: white;
+}
+/* product */
+#product h4{
+    font-size: 28px;
+    text-align: center;
+}
+#product p{
+    text-align: center;
+    margin: 10px;
+}
+.product-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.sproduct-box{
+    width: 250px;
+    box-shadow: 3px 3px 3px grey,-3px -3px 3px grey;
+    padding: 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 20px;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.sproduct-box:hover{
+    box-shadow: 3px 3px 8px rgb(92, 92, 92),-3px -3px  8px rgb(104, 104, 104);
+}
+.sproduct-box img{
+    width: 100%;
+}
+.sproduct-box span{
+    color: grey;
+    padding: 4px 0;
+}
+.sproduct-box h3{
+    line-height: 20px;
+    padding: 4px 0;
+}
+.sproduct-box h2{
+    font-size: 26px;
+    padding: 5px 0;
+}
+.cart-btn{
+    outline: none;
+    padding: 2px 10px;
+    font-size: 17px;
+    transition: .3s ease-in-out;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.cart-btn:hover{
+    background-color: rgb(2, 105, 105);
+}
+/* banner1 */
+#banner1{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0,0,0, .07)), url(img/banner/b1.jpeg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.div h3{
+    font-size: 20px;
+    list-style: 20px;
+    padding: 5px 0;
+}
+.div h2{
+    font-size: 25px;
+    list-style: 20px;
+    padding: 5px 0;
+}
+.div h2 span{
+    color: darkcyan;
+}
+.div button:hover{
+    background-color: rgb(2, 97, 97);
+    color: white;
+}
+/* banner2 */
+#banner2{
+    display: flex;
+    justify-content: space-between;
+}
+.banner1{
+    background: linear-gradient(rgba(0, 0, 0, 0.288),rgba(0,0,0, .07)), url(img/banner/b3.jpeg) center no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 300px;
+    padding: 60px 40px;
+    margin: 20px;
+}
+.banner1 h2{
+    color: white;
+    padding: 5px 0;
+}
+.banner1 p{
+    color: white;
+    padding: 7px 0;
+}
+.banner1:hover button{
+    background-color: darkcyan;
+    color: white;
+}
+.banner2{
+    background: linear-gradient(rgba(0, 0, 0, 0.24),rgba(0,0,0, .07)), url(img/banner/b4.jpeg) center no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 300px;
+    padding: 60px 40px;
+    margin: 20px;
+}
+.banner2 h2{
+    color: white;
+    padding: 5px 0;
+}
+.banner2 p{
+    color: white;
+    padding: 7px 0;
+}
+.banner2:hover button{
+    background-color: darkcyan;
+    color: white;
+}
+/* small banner */
+#small-banner{
+    display: flex;
+    justify-content: space-between;
+}
+.sm-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.24),rgba(0,0,0, .07)), url(img/banner/b5.jpeg) center no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 180px;
+    padding: 60px 40px;
+    margin: 20px;
+    color: white;
+}
+.sm-banner2{
+    background: linear-gradient(rgba(0, 0, 0, 0.24),rgba(0,0,0, .07)), url(img/banner/b6.jpeg) center no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 180px;
+    padding: 60px 40px;
+    margin: 20px;
+    color: white;
+}
+.sm-banner3{
+    background: linear-gradient(rgba(0, 0, 0, 0.24),rgba(0,0,0, .07)), url(img/banner/b7.jpeg) center no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 180px;
+    padding: 60px 40px;
+    margin: 20px;
+    color: white;
+}
+/* newslatter */
+#newslatter{
+    display: flex;
+    height: 25vh;
+    width: 100%;
+    background-color: darkcyan;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+#newslatter h1{
+    font-size: 30px;
+    padding: 5px 0;
+}
+#newslatter p span{
+    color: yellow;
+}
+.news-form{
+    display: flex;
+}
+.news-form input{
+	outline: none;
+	height: 37px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	border: none;
+	padding: 2px 20px;
+	border-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.news-form button{
+	height: 37px;
+	outline: none;
+	transition: .3s ease-in-out;
+	color: white;
+	border: none;
+	padding: 2px 20px;
+	background-color: rgb(107, 107, 107);
+	white-space: nowrap;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+/* footer */
+footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.col h4{
+    margin-bottom: 20px;
+}
+.col a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+.col a:hover{
+    color: #068a81;
+}
+.col p{
+    margin-bottom: 20px;
+}
+.img-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-row img{
+    max-width: 100px;
+}
+.img-row .payment{
+    max-width: 200px;
+}
+.copy-right p{
+    text-align: center;
+}
+/* end index */
+
+
+/* shop page */
+.shop-hero{
+    height: 60vh !important;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0,0,0, .07)), url(img/shop-hero.jpeg) center no-repeat !important;
+    background-size: cover !important;
+    padding: 130px 0 0 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+/* blog page */
+.blog-hero{
+    height: 60vh !important;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0,0,0, .07)), url(img/blog.jpeg) center no-repeat !important;
+    background-size: cover !important;
+    padding: 130px 0 0 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 70px 0;
+    position: relative;
+}
+.blog-img{
+    width: 50%;
+    height: 350px;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+}
+.blog-text{
+    width: 50%;
+    padding: 50px;
+}
+.blog-text h3{
+    font-size: 27px;
+    padding: 8px 0;
+}
+.blog-text p{
+    padding: 8px 0;
+    margin-bottom: 30px;
+}
+.blog-text a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.blog-text a::after{
+    content: "";
+    height: 1px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+    margin-left: 2px;
+    top: 10px;
+}
+.blog-text a:hover{
+    color: darkcyan;
+}
+.blog-box h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 70px;
+    color: grey;
+    margin-top: -55px;
+    z-index: -111;
+    margin-left: -40px;
+}
+/* about page */
+#about{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-hero{
+    height: 60vh !important;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.404),rgba(0,0,0, .07)), url(img/about.jpeg) center no-repeat !important;
+    background-size: cover !important;
+    padding: 130px 0 0 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-img{
+    width: 50%;
+    height: auto;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-text{
+    width: 49%;
+    padding: 20px;
+}
+.about-text h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.about-text marquee{
+    background-color: grey;
+    margin-top: 40px;
+    color: white;
+}
+#app h1{
+    text-align: center;
+    font-size: 38px;
+}
+.vdo {
+    display: flex;
+    justify-content: center;
+}
+.vdo video{
+    height: 600px;
+    width: 600px;
+}
+
+/* single product page */
+#single-product{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-img-box{
+    width: 40%;
+    height: auto;
+
+}
+.main-img-box img{
+    width: 100%;
+    height: 250px;
+    padding: 15px;
+    background-color: grey;
+}
+.small-img-box{
+    display: flex;
+    width: 100%;
+
+}
+.small-img-box img{
+    width: 100%;
+    height: 100px;
+    margin: 5px 5px 0 0;
+}
+.main-text{
+    width: 45%;
+    padding-top: 30px;
+}
+.main-text h5{
+    padding-bottom: 5px;
+    color: darkcyan;
+}
+.main-text h3{
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.main-text h2{
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.main-text select{
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    width: 200px;
+    padding: 3px 0;
+    margin-bottom: 10px;
+}
+.main-text input{
+    outline: none;
+    width: 200px;
+    padding: 3px 0;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.main-text button{
+    height: 30px;
+    width: 200px;
+    background-color: darkcyan;
+    color: white;
+    margin-bottom: 10px;
+}
+.main-text h1{
+    padding-bottom: 10px;
+    line-height: 20px
+}
+/* meadi quires */
+@media (max-width:850px) {
+    .section-p{
+        padding: 20px 30px;
+    }
+    #extra-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .product-box{
+        justify-content: space-around;
+    }
+    .sproduct-box {
+        width: 200px;
+        padding: 10px;
+    }
+    .banner1 {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    .banner2 {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    .sm-banner {
+        width: 250px;
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    .sm-banner2 {
+        width: 250px;
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    .sm-banner3 {
+        width: 250px;
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    .blog-box h1 {
+        margin-left: 0;
+    }
+    .about-text h1 {
+        margin-bottom: 10px;
+    }
+    .about-text {
+        padding: 0;
+    }
+    .about-text marquee {
+        margin-top: 10px;
+    }
+    #single-product {
+        justify-content: space-around;
+    }
+}
+@media (max-width:550px) {
+    /* navbar */
+    .active-nav{
+        display: grid !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(199, 199, 199);
+        width: 100%;
+        margin-top: 50px;
+        border-top: 1px solid black;
+        transition:  .3s ease-in-out !important;
+        box-shadow: 3px 3px 3px grey;
+    }
+    .toggle-btn{
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 22px;
+    }
+    .link{
+        display: none;
+    }
+    .sproduct-box {
+        width: 100%;
+    }
+    #banner2 {
+        flex-direction: column;
+    }
+    .banner1 {
+        width: 100%;
+    }
+    .banner2 {
+        width: 100%;
+    }
+    #small-banner {
+        flex-direction: column;
+    }
+    .sm-banner {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    .sm-banner2 {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    .sm-banner3 {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    #newslatter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog-box {
+        flex-direction: column;
+    }
+    .blog-img {
+        width: 100%;
+    }
+    .blog-text {
+        width: 100%;
+        padding: 20px 0;
+    }
+    #about {
+        flex-direction: column;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .about-text {
+        width: 100%;
+    }
+    .vdo video {
+        width: 100%;
+    }
+    #single-product {
+        flex-direction: column;
+    }
+    .main-img-box {
+        width: 100%;
+    }
+    .main-text {
+        width: 100%;
+    }
+    
+}
